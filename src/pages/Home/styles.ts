@@ -17,7 +17,7 @@ export const Content = styled.div`
   flex-direction: column;
 
   section {
-    background: ${props => props.theme.color.background};
+    background: ${props => props.theme.color.secondary};
     border-radius: 10px;
     display: flex;
     flex-direction: column;
