@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-  background: linear-gradient(360deg, #29292e 90%, #121214);
+  background: linear-gradient(270deg, ${props => props.theme.color.primary} 1%, ${props => props.theme.color.secondary});
   height: 100px;
   display: flex;
 `;
@@ -45,7 +45,7 @@ export const NavItems = styled.div`
 
     font-size: 18px;
     font-weight: bold;
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.text};
     cursor: pointer;
     text-decoration: none;
     margin: 0 20px 0 20px;
@@ -56,7 +56,7 @@ export const NavItems = styled.div`
     &:hover,
     &:focus {
       opacity: 0.55;
-      background: ${props => props.theme.color.primary};
+      background: ${props => props.theme.color.secondary};
       color: ${props => props.theme.color.text};
       border-bottom: 5px solid #fff;
     }

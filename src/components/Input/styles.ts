@@ -9,13 +9,13 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  background: #121214;
+  background: ${props => props.theme.color.background};
   border-radius: 10px;
   padding: 16px;
   width: 100%;
 
-  border: 2px solid #121214;
-  color: #666360;
+  border: 2px solid ${props => props.theme.color.secondary};
+  color:  ${props => props.theme.color.text};
 
   display: flex;
   align-items: center;
@@ -49,10 +49,10 @@ export const Container = styled.div<ContainerProps>`
     flex: 1;
     background: transparent;
     border: 0;
-    color: #f4ede8;
+    color: ${props => props.theme.color.text};
 
     &::placeholder {
-      color: #666360;
+      color: ${props => props.theme.color.text};
     }
   }
 
